@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Discord</title>
+</head>
+<body data-barba="wrapper">
+	
+	<style>
+		* {
+			padding: 0;
+			height: 0;
+		}
+
+		body {
+			background: #1E1F22;
+			color: #fff;
+		}
+
+		.discord {
+			  height: 90px;
+			  line-height: 90px;
+			  text-align: center;
+			  margin-top: 18%;
+		}
+
+		p {
+			padding: 15px;
+		}
+
+		p.c:hover {
+			cursor: pointer;
+		}
+		h5 {
+			margin-bottom: 30px;
+		}
+	</style>
+
+	<div class="discord" data-barba="container" data-barba-namespace="discord">
+		<h5>Discord</h5>
+		<h1>RichTheReal#1867</h1>
+		<p class="c" onclick="window.location.replace('index.html');">Go Back</p>
+	</div>
+
+
+  <!-- load some animation library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <!-- load barba.js (this will use the latest UMD version of the library) -->
+  <script src="https://unpkg.com/@barba/core"></script>  
+
+  <script>
+
+	barba.init({
+		transitions: [{
+		name: 'legacy-example',
+		leave: function(data) {
+			var done = this.async();
+			TweenMax.to(data.current.container, 1, {
+			opacity: 0,
+			onComplete: done
+			});
+		},
+		enter: function(data) {
+			var done = this.async();
+			TweenMax.from(data.next.container, 1, {
+			opacity: 0,
+			onComplete: done
+			});
+		}
+		}]
+	});   
+
+  </script>
+
+</body>
+</html>

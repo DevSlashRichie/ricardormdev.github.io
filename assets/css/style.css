@@ -1,0 +1,361 @@
+/* PRIVISIONAL */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1em;
+}
+
+nav .nav-link {
+  color: white;
+}
+
+#mainNav {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+#mainNav .navbar-brand {
+  font-size: 15px !important;
+}
+
+#mainNav a {
+  color: #fff;
+}
+
+#mainNav a:hover {
+  color: #eaeaea;
+}
+
+body {
+  background: url("../../img/bg-edit.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-position: center center;
+
+  min-width: 600px;
+  position: relative;
+}
+
+#home.mast {
+  text-align: center;
+  color: #fff;
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  #home.mast {
+    min-height: 650px;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .feed-h{
+    min-height: 650px;
+    height: 100vh;
+    padding-top: 160px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #home.mast {
+    margin-bottom: 100px;
+  }
+}
+
+.ct-flex-vr {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#home h1 {
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+
+#home p {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+#home img {
+  border-radius: 100%;
+}
+
+#about {
+  background-color: #fff;
+  color: #1d1d1d;
+  padding-bottom: 200px;
+}
+
+#about .col-lg-12 {
+  padding-left: 0 !important;
+}
+
+#about hr {
+  width: 200px;
+}
+
+#about h1 {
+  font-size: 40px;
+}
+
+#about p {
+  padding: 80px 0;
+  font-size: 25px;
+}
+
+#about .abls {
+  margin: auto auto;
+}
+
+#about .progress {
+  margin: 20px 0;
+  height: 0.5rem;
+}
+
+#about .progress .progress-bar {
+  background-color: #222 !important;
+}
+
+#about hr.abs {
+  width: 150px;
+  position: absolute;
+  position: left;
+}
+
+#about hr {
+    border-color: #000;
+}
+
+#abilities {
+  padding: 120px 0;
+  color: #fff;
+  background: #222;
+}
+
+#abilities h1 {
+  font-size: 60px;
+}
+
+#abilities h2 {
+  text-align: center;
+}
+
+#abilities .ct {
+  text-align: center;
+  font-size: 60px;
+}
+
+#abilities .ct .icon {
+  /*color: #244d6d;*/
+}
+
+#abilities .ctns {
+  margin-top: 7em;
+}
+
+#abilities .ip {
+  font-size: 20px;
+  color: #6c757d !important;
+}
+
+#abilities .upper p {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: -5px;
+}
+
+#abilities .upper hr {
+  border-color: #fff;
+  margin-top:50px;
+}
+
+#quote {
+  background: url("../../img/bg2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-position: center center;
+
+  padding: 200px;
+}
+
+#quote .text {
+  color: #fff;
+  font-size: 50px;
+}
+
+#quote b {
+  color: #d8d8d8;
+}
+
+#quote hr {
+  border-color: #fff;
+  width: 50%;
+}
+
+#quote .text a {
+  font-size: 15px;
+  color: #fff;
+  padding: 15px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+#quote .text a:hover {
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+#experience {
+  background-color: #222;
+  height: 300px;
+  color: #fff;
+  padding: 50px 0;
+}
+
+#experience .fsq {
+  width: 120px;
+  text-align: center;
+}
+
+#experience h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+#experience .sq {
+  margin: 0 auto;
+  width: 160px;
+  height: 140px;
+  border: 3px solid #696666;
+}
+
+#experience .sq h5 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 -5px 0;
+  padding: 30px 0 5px 0;
+}
+
+#experience .sq span {
+  font-size: 11px;
+}
+
+#work {
+  padding: 150px;
+  background: #222;
+  color: #fff;
+  height: auto;
+}
+
+#work .tabs{
+  text-align: right;
+  margin-top: 15px;
+}
+
+#work .tabs .tab {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 15px;
+  padding: 8px 15px;
+}
+
+#work .tabs .tab:hover {
+  cursor: pointer;
+}
+
+#work .item {
+    background: red;;
+}
+
+#contact {
+  padding: 150px;
+  background: #f5f5f5;
+  color: #222;
+  height: auto;
+}
+
+#contact a {
+  color: #222;
+  text-decoration: none;
+}
+
+#contact a span {
+  margin-left: 50px;
+}
+
+#contact hr {
+  margin-bottom: 100px;
+}
+
+#contact .s-s {
+  padding: 20px;
+  text-align: center;
+}
+
+#contact {
+  font-size: 50px;
+}
+
+#contact .txt {
+  letter-spacing: 15px;
+  font-size: 50px;
+}
+#contact .logo {
+  display: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  margin-left: -40px;
+  border: 1px solid white;
+}
+
+.sepB {
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 80px);
+  left: 0;
+  border: 1px solid white;
+}
+
+.js-scroll-trigger.active {
+  border-bottom: 1px solid #fff !important;
+  color: #fff !important;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.cbp-caption-activeWrap {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 15px 10px 5px 10px;
+}
